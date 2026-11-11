@@ -1,0 +1,7 @@
+line-length = 110
+
+[lint]
+select = ["E", "F", "I", "W"]
+
+[lint.isort]
+known-first-party = ["fqsim", "common"]

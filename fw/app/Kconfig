@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT
+mainmenu "Fuel quantity gauge computer"
+
+config FQ_TEST_HOOKS
+	bool "Test hooks"
+	help
+	  Exports extra diagnostics for the Renode rig. The acquisition data come
+	  over the bus UART in both images (on a real unit from the probe
+	  transmitter concentrator). Test image only (test.conf).
+
+source "Kconfig.zephyr"

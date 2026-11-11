@@ -1,0 +1,13 @@
+// Gauge-computer platform for Renode: Renode's MIMXRT1064-EVK model with two fixes.
+
+using "platforms/boards/mimxrt1064_evk.repl"
+
+// FIX: Zephyr runs the RT1064 core (and SysTick) at 600 MHz. Renode's default
+// is 72 MHz, which would make firmware time run 8.3x slower than virtual time.
+nvic:
+    systickFrequency: 600000000
+
+// FIX: the board file registers the green LED at gpio1 pin 9 but does not
+// connect the pin to it. The pin is the LOW FUEL lamp discrete here.
+gpio1:
+    9 -> green_led@0

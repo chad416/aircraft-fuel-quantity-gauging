@@ -1,0 +1,31 @@
+{
+ "full_scale_total_kg": 1487.8194275268395,
+ "n": 6000,
+ "eps": {
+  "invalid_share": 0.0,
+  "p95_abs_pct_fs": 0.6462709629207077,
+  "max_abs_pct_fs": 1.8640989960832424,
+  "mean_pct_fs": 0.012452567944066928
+ },
+ "densitometer": {
+  "invalid_share": 0.0,
+  "p95_abs_pct_fs": 0.37650801030468095,
+  "max_abs_pct_fs": 1.3491372781609416,
+  "mean_pct_fs": -0.06980532046823652
+ },
+ "residual_tests": 8100,
+ "chi2_over_threshold_max": 0.5825460112648941,
+ "chi2_over_threshold_p99": 0.2143615977999339,
+ "false_alarms": 0,
+ "sigma_z_mm": 1.2,
+ "kappa_pct": 1.2,
+ "p95_one_source_pct_fs": {
+  "electronics": 0.12814377940908953,
+  "c_dry_cal": 0.11585509976514557,
+  "install": 0.19273646238916287,
+  "compensator": 0.16182671057033082,
+  "stratification": 0.13566926333650683,
+  "composition": 0.5940929323959603,
+  "none": 0.10430540620873081
+ }
+}

@@ -1,0 +1,21 @@
+/*
+ * Gauge computer I/O on the MIMXRT1064-EVK.
+ * SPDX-License-Identifier: MIT
+ */
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/ {
+	chosen {
+		fq,bus-uart = &lpuart3; /* Arduino D0/D1; RS-422 to the transmitter concentrator on a real unit */
+	};
+
+	zephyr,user {
+		/* LOW FUEL lamp discrete: the EVK green user LED. */
+		lamp-gpios = <&gpio1 9 GPIO_ACTIVE_HIGH>;
+	};
+};
+
+&lpuart3 {
+	status = "okay";
+	current-speed = <115200>;
+};

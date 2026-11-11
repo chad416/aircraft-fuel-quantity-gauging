@@ -1,0 +1,17 @@
+{
+ "fs_tank_kg": 743.9097137634197,
+ "mon_tol_kg": 7.439097137634198,
+ "vectors": 160,
+ "vector_status": {
+  "0": 112,
+  "1": 47,
+  "2": 1
+ },
+ "scenarios": {
+  "sc1_flight.csv": 1200,
+  "sc2_faults.csv": 400,
+  "sc3_low.csv": 700,
+  "sc4_comp_gap.csv": 300,
+  "sc5_stuck_dry.csv": 750
+ }
+}

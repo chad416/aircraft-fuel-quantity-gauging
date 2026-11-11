@@ -1,0 +1,14 @@
+:name: Fuel gauge computer
+:description: gauge-computer firmware on the MIMXRT1064-EVK model.
+
+# Required: $elf (path to zephyr.elf). The scripts and the Robot tests set it.
+
+$name?="fqc"
+mach create $name
+machine LoadPlatformDescription $ORIGIN/fq_board.repl
+
+# 100 us quantum: the rig sends one acquisition frame every 100 ms.
+emulation SetGlobalQuantum "0.0001"
+
+sysbus LoadELF $elf
+cpu VectorTableOffset `sysbus GetSymbolAddress "_vector_table"`

@@ -1,0 +1,33 @@
+{
+ "branches_per_fh": {
+  "probe drift, COM+MON miss (S5)": 5.265233247869756e-07,
+  "probe drift, COM only (no MON)": 8.669410150891632e-07,
+  "channel gain, reference check miss": 2.5000000000000025e-08,
+  "compensator drift, cross-check miss": 5.0000000000000044e-08,
+  "processor/memory, undetected": 1.0000000000000009e-09
+ },
+ "p_misleading_per_fh": 6.025233247869757e-07,
+ "target_hazardous": 1e-07,
+ "q_low_warning_unavailable": 7.500000000000001e-06,
+ "p_catastrophic_per_fh": 4.518924935902319e-12,
+ "target_catastrophic": 1e-09,
+ "p_catastrophic_without_low_sensor": 6.025233247869757e-07,
+ "intrinsic_safety": {
+  "energy_normal_uJ": 0.018250000000000002,
+  "current_normal_mA_rms": 0.2293362637120549,
+  "hot_short_current_mA": 32.2,
+  "hot_short_stored_energy_uJ": 0.3784466000000001,
+  "series_R_ohm": 1000.0,
+  "rc_time_constant_us": 0.73,
+  "phase_at_excitation_deg": 2.6279999999999997,
+  "limits": {
+   "design_uJ": 20,
+   "normal_uJ": 50,
+   "failure_uJ": 200,
+   "steady_mA": 25,
+   "failure_mA": 50
+  }
+ },
+ "mtbf_h": 9615.384615384617,
+ "share_of_failures_dispatchable_with_one_probe_out": 0.7692307692307693
+}

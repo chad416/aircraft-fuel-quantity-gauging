@@ -1,0 +1,8 @@
+# MISRA C:2012 deviations for lib/fq (cppcheck suppression list).
+# Every entry is explained in fw/docs/misra.md.
+# D1 - Rule 2.5 (advisory): fq.h is the public interface and protocol definition;
+#      some macros are used only by the application, the tests and the rig.
+misra-c2012-2.5:*lib/fq/include/fq/fq.h
+# D2 - Rule 8.7 (advisory): fq_rho_from_eps and fq_weight are public API used by
+#      the unit tests and the application, outside the analysed file set.
+misra-c2012-8.7:*lib/fq/src/solve.c
